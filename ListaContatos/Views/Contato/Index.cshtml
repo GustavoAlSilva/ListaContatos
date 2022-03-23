@@ -1,0 +1,99 @@
+﻿@{
+    ViewData["Title"] = "Listagem de Contatos";
+}
+
+<div class="text-center">
+
+    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+        <a class="btn btn-primary" role="button" asp-controller="Contato" asp-action="Criar">Adicionar Novo Contato</a> 
+    </div>
+    <br/>
+
+    <h1 class="display-4">Listagem de Contatos</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Nome</th>
+                <th scope="col">Sobrenome</th>
+                <th scope="col">E-mail</th>
+                <th scope="col">Celular</th>
+                <th scope="col">Observação</th>
+                <th scope="col"></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">1</th>
+                    <td>Gustavo</td>
+                    <td>Silva</td>
+                    <td>gustavo@gmail.com</td>
+                    <td>47 99433-5131</td>
+                    <td>Colega de classe</td>
+                    <td>
+                        <div class="btn-group" role="group">
+                            <a role="button" class="btn btn-primary" asp-controller="Contato" asp-action="Editar">Editar</a>
+                            <a role="button" class="btn btn-danger" asp-controller="Contato" asp-action="ApagarConfirmacao">Apagar</a>
+                        </div>
+                    </td>
+            </tr>
+            <tr>
+                <th scope="row">2</th>
+                    <td>Jonas</td>
+                    <td>Oliveira</td>
+                    <td>jonas@gmail.com</td>
+                    <td>47 99433-5132</td>
+                    <td>Colega do trabalho</td>
+                    <td>
+                        <div class="btn-group" role="group">
+                            <a role="button" class="btn btn-primary" asp-controller="Contato" asp-action="Editar">Editar</a>
+                            <a role="button" class="btn btn-danger" asp-controller="Contato" asp-action="ApagarConfirmacao">Apagar</a>
+                        </div>
+                    </td>
+            </tr>
+            <tr>
+                <th scope="row">3</th>
+                    <td>Lara</td>
+                    <td>Bérgamo</td>
+                    <td>lara@gmail.com</td>
+                    <td>47 99433-5133</td>
+                    <td>Vizinha</td>
+                    <td>
+                        <div class="btn-group" role="group">
+                            <a role="button" class="btn btn-primary" asp-controller="Contato" asp-action="Editar">Editar</a>
+                            <a role="button" class="btn btn-danger" asp-controller="Contato" asp-action="ApagarConfirmacao">Apagar</a>
+                        </div>
+                    </td>
+            </tr>
+            <tr>
+                <th scope="row">4</th>
+                    <td>Maria</td>
+                    <td>Almeida</td>
+                    <td>maria@gmail.com</td>
+                    <td>47 99433-5134</td>
+                    <td>Colega de classe</td>
+                    <td>
+                        <div class="btn-group" role="group">
+                            <a role="button" class="btn btn-primary" asp-controller="Contato" asp-action="Editar">Editar</a>
+                            <a role="button" class="btn btn-danger" asp-controller="Contato" asp-action="ApagarConfirmacao">Apagar</a>
+                        </div>
+                    </td>
+            </tr>
+            <tr>
+                <th scope="row">5</th>
+                    <td>Marcos</td>
+                    <td>dos Santos</td>
+                    <td>marcos@gmail.com</td>
+                    <td>47 99433-5135</td>
+                    <td>Professor</td>
+                    <td>
+                        <div class="btn-group" role="group">
+                            <a role="button" class="btn btn-primary" asp-controller="Contato" asp-action="Editar">Editar</a>
+                            <a role="button" class="btn btn-danger" asp-controller="Contato" asp-action="ApagarConfirmacao">Apagar</a>
+                        </div>
+                    </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
